@@ -1,0 +1,25 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="1j[IYw-QePCpGolV6J@-" x="647" y="-252"><statement name="HANDLER"><block type="controls_repeat_ext" id="(theovERg]=v_BQ^3c{u"><value name="TIMES"><shadow type="math_whole_number" id="^G@@[OO_UW21z1nU;exs"><field name="NUM">2</field></shadow></value><statement name="DO"><block type="device_show_leds" id="};O*+^,`J_6c8$!w]#fY"><field name="LEDS">`
+        . # . . . 
+        # . . . . 
+        # . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="+pWg=z_kC~CC~1cI$!BM"><field name="LEDS">`
+        . . # # . 
+        . . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id=".bS7T}g{!Un_!?HM7$,/"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . # 
+        . . . . # 
+        . . . # .
+        `</field><next><block type="device_show_leds" id="@@|:*JjsJg%`YX~!B5Hj"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . . 
+        . # # . .
+        `</field></block></next></block></next></block></next></block></statement><next><block type="servoservorun" id="`=^y!6qqR8SmK4[x87M0"><field name="servo">servos.P2</field><value name="speed"><shadow type="speedPicker" id="!R#xmyk]^m$~-O8l+:lb"><field name="speed">100</field></shadow></value><next><block type="servoservosetangle" id="WlV`DdGZZVGYqCt^,|MP"><field name="servo">servos.P2</field><value name="degrees"><shadow type="protractorPicker" id="s)_N2ou(Gt44fMe,Coa("><field name="angle">0</field></shadow></value><next><block type="device_pause" id="!5k)obEMw.DIZts{pL=n"><value name="pause"><shadow type="timePicker" id="{J4Qt1pyF.bgkL|@r)On"><field name="ms">1000</field></shadow></value></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="LSEktRU]efHTtp$:9luS" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_number" id="$%`1dpwszz|y^E#BptqV"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="oKl;JG{NAi{noMgmOfRQ"><field name="name">AnalogPin.P0</field></block></value></block></statement></block><block type="device_forever" id="jgu`FCE(0mm)sUay+oQ+" x="23" y="220"><statement name="HANDLER"><block type="controls_if" id="JN6/^[?BYf`:MXC*IWM,"><mutation else="1"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="?W#)ozTq2t9NUrc6Sl?["><field name="OP">LTE</field><value name="A"><shadow type="math_number" id="}KK{wa_;?{AVH*X!+NOl"><field name="NUM">500</field></shadow></value><value name="B"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_get_analog_pin" id="yR0!XLyfisY*PG@V,SD)"><field name="name">AnalogPin.P0</field></block></value></block></value><statement name="DO0"><block type="servoservosetangle" id="|6OvxatZ.%U{4p#5G_;e"><field name="servo">servos.P2</field><value name="degrees"><shadow type="protractorPicker" id="aD3ykZ2J*v$fBp?BlOY["><field name="angle">90</field></shadow></value><next><block type="basic_show_icon" id="c_8nL2cn~u$At~QIrL9u"><field name="i">IconNames.Happy</field></block></next></block></statement><statement name="ELSE"><block type="servoservosetangle" id="wvy_P=o@A.E9v}kZbDNo"><field name="servo">servos.P2</field><value name="degrees"><shadow type="protractorPicker" id="vYKMm~02${JnYPV]R:bo"><field name="angle">0</field></shadow></value><next><block type="basic_show_icon" id="``;$T6a|d;tsV!pD{MF-"><field name="i">IconNames.Sad</field></block></next></block></statement></block></statement></block></xml>
